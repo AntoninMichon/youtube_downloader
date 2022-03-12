@@ -1,22 +1,19 @@
 from pytube import YouTube      # pip install pytube
 
 # Demande du lien à l'utilisateur :
-link = input("Entrer Le lien de la vidéo que vous souhaitez télécharger \n=> ")
+
+link = input("Entrer le lien de la vidéo que vous souhaitez télécharger :\n=>   ")
 yt = YouTube(link)
 
-# details
-def detail(lien):
-    print("Titre: ",lien.title)
-    print("Nombre de vus: ",lien.views)
-    print("Durée de la vidéo: ",lien.length)
-    print("Notation de la vidéo ",lien.rating)
-# Meilleur résolution possible
-def res(lien):
-    res = lien.streams.get_highest_resolution()
-    return res
+#Showing details
+print("Titre: ",yt.title)
+print("Nombre de vu : ",yt.views)
+print("Durée de la vidéo: ",yt.length, " secondes")
 
-#Starting download
-detail(link)
+# Meilleur résolution
+ys = yt.streams.get_highest_resolution()
+
+# Début téléchargement
 print("Téléchargement en cours...")
-res(link).download()
-print("Téléchargement terminé!!")
+ys.download()
+print("Téléchargement terminé !")
