@@ -28,4 +28,4 @@
 >>`bash module_you_need_module.sh`
 >
 > Windows :
->>'idk`
+>>`idk`
