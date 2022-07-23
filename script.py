@@ -63,7 +63,7 @@ def download(info, title, type_device):
         type_device (str): give info about the os ('Linux', 'Windows', 'Darwin' => for Mac OS)
     """
     print("Downloading ...")
-    info.download()     #! => Start Download
+    info.download("./Video_Output")     #! => Start Download
     print("Download done !")
     #? file_path = os.path.realpath(__file__)
     ask = input("Your video is in {}, do you want open it now ? [Y/n]\n=>".format(os.getcwd())).lower()     #! => Display access path
