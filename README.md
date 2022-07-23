@@ -28,4 +28,11 @@
 >>`bash module_you_need_module.sh`
 >
 > Windows :
->>`idk`
+>>`.\Launch_4_Windows.bat`
+>> Or launch Launch_4_Windows.bat
+
+#### Location of the downloaded videos :
+
+When you upload a video, it is in the script folder. You can right click on it and select "Create a shortcut" rename it for example "Downloaded video" and put it on your desktop or video folder.
+
+#You can also make a shortcut of the script on your desktop by right-clicking on the desktop > new > shortcut and indicate the path and the file Launch For {Your OS}. You can change the icon with the .ico file available in the repository.
