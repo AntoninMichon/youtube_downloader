@@ -1,4 +1,4 @@
-# HookSander
+# By HookSander
 
 def pre_quest_test():
     ok = 0
