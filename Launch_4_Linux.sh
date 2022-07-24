@@ -9,3 +9,6 @@ if __name__ == '__main__' :
     file_path = file_path[:-17]
     current_script = str(file_path) + "Output_File/script.py"
     os.system("python3 {}".format(current_script))
+    print("Press enter to exit...")
+    ex = input("")
+    exit()
