@@ -82,7 +82,7 @@ def main() :
     typeFile = audioOrVideo()
     if typeFile == 'video' :
         if valideDownload('video', link) :
-            saveFile(download_video(link))
+            download_video(link)
             print("\nVideo is in {}".format(os.getcwd()))
     if typeFile == 'audio' :
         if valideDownload('audio', link) :
